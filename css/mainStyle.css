@@ -1,0 +1,532 @@
+/* start global rules */
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+/* end global rules */
+
+/* *************************************** */
+body{
+    height: 2000px;
+}
+/* start navbar */
+.navbar{
+background-color: #FFF;
+}
+.navbar .logo {
+    padding: 20px 30px;
+}
+.navbar .logo h2{
+    padding: 0 10px;
+    border-left: 1px solid rgb(253, 116, 116) ;
+    border-right: 1px solid rgb(253, 116, 116) ;
+}
+.navbar .logo h2 span{
+    color: rgb(253, 116, 116);
+}
+.navbar .list-nav {
+    padding: 10px 0;
+    width: 79%;
+}
+.navbar .list-nav li {
+    display: inline-block;
+    padding: 20px;
+  
+}
+.navbar .list-nav li.selected{
+    background-color: #6790b4;
+}
+.navbar .toggle{
+    background-color: #111;
+    height: 50px;
+    width: 50px;
+    display: none;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+.navbar .toggle span{
+    position: absolute;
+    width: 55%;
+
+    height: 6px;
+    display: block;
+    left:23%;
+    background-color: #FFF;
+}
+.navbar .toggle span.line_1{
+    top: 10px;
+   
+}
+.navbar .toggle span.line_2{
+    top: 22px;
+}
+.navbar .toggle span.line_3{
+    bottom: 10px;
+}
+/* end navbar */
+/* *************************************** */
+/* start style Header */
+.header{
+    background: url('../image/header.jpg') no-repeat bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 100vh; */
+    min-height: 500px;
+    position: relative;
+    color: #FFF;
+
+}
+.header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(103, 182, 249, 0.5);
+}
+
+.header .overlay  h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin:40px 0;
+
+}
+.header .overlay .plan{
+    border: 2px solid #FFF;
+    width: 48%;
+    margin: auto;
+    padding: 10px;
+    font-size: 24px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.header .overlay .order{
+    border: 2px solid #FFF;
+    margin: 20px 1% auto 1%;
+    padding: 10px;
+    font-size: 24px;
+}
+@media (max-width:768px){
+    .header .overlay .plan{
+        float: none;
+        margin:10px auto;
+        font-size: 19px;
+
+    }
+    
+}
+@media (max-width:420px){
+    h1{
+        font-size: 40px !important;
+    }
+} 
+/* end style Header */
+/* *************************************** */
+
+/* start style features */
+.features {
+    padding: 40px 0;
+}
+.features .h1{
+    font-size: 40px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.features .feat{
+    padding: 0 20px 0 0;
+    margin-bottom: 40px;
+}
+.features .feat h2{
+    color: #555;
+    margin: 10px 0 8px  ;
+}
+.features .feat p{
+    line-height: 1.7;
+}
+
+@media (min-width:992px){
+    .features .feat{
+        width: calc(100% / 3) !important; 
+    }
+}
+@media (min-width:768px){
+    .features .feat{
+    
+        width: calc(100% / 2); 
+    }
+}
+@media (max-width:767px){
+    .features .feat{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* start style features */
+/* *************************************** */
+
+/* start about */
+.about{
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+.about .h1{
+    font-size: 40px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.about .responsive-paragraph{
+    color: rgb(95, 95, 95);
+}
+/* end about */
+/* *************************************** */
+
+/* start pricing table  */
+.pricing-table{
+    background-color: #555;
+    padding: 40px 0;
+}
+.pricing-table .h1{
+    font-size: 40px;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.pricing-table .pricing-plan{
+    position: relative;
+    margin-left: 1%;
+    border: 2px solid #FFF;
+    padding: 30px 0;
+}
+
+.pricing-table .pricing-plan h3{
+    font-size: 22px;
+    color: #fff;
+    margin: 0 0 10px;
+}
+.pricing-table .pricing-plan .pricing{
+    display: inline-block;
+    font-size: 20px;
+    color: #bbb;
+    margin: 0 0 10px;
+}
+.pricing-table .pricing-plan ul{
+    font-size: 18px;
+    line-height: 2;
+    color: #FFF;
+}
+@media (max-width:767px){
+    .pricing-table .pricing-plan{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .pricing-table .pricing-plan{
+        width: calc(97%/2);
+        margin-bottom: 20px;
+       
+    }
+    .pricing-table .container div:nth-of-type(3){
+        margin-left: 25%; /*offsit element */
+    }
+}
+@media (min-width:992px){
+    .pricing-table .pricing-plan{
+        width: calc(97%/3);
+    }
+    .pricing-table .pricing-plan.plus{
+        left:calc((100%/3) * 2 ) /*push element to 2 step*/
+
+    }
+    .pricing-table .pricing-plan.ultimate{
+        right:calc((100%/3) * 2 ) /*back element to 2 step*/
+
+    }
+}
+/* end pricing table */
+/* *************************************** */
+
+/* start our work */
+.works .images img{
+    height: 210px;
+}
+@media (max-width:767px){
+    .works .images{
+        width: 100%;
+    } 
+}
+@media (min-width:768px){
+    .works .images{
+        width: calc(100%/2);
+    } 
+}
+
+@media (min-width:992px){
+    .works .images{
+        width: calc(100%/3);
+    } 
+}
+
+@media (min-width:1200px){
+    .works .images{
+        width: calc(100%/4);
+    } 
+}
+/* end our work */
+/* *************************************** */
+
+/* start what they say  'learn offsit eg: bootstrap' */
+.they-say{
+    padding: 40px 0;
+}
+.they-say .h1{
+    color: rgb(34, 34, 34);
+    margin-bottom: 20px;
+}
+.they-say .person-say {
+    background-color: #ddd;
+    padding: 15px;
+    margin: 0 0 10px 0;
+}
+@media (max-width:767px){
+    .they-say .person-say .avater{
+        float: none;
+        margin: auto;
+    }
+    .they-say .person-say h3{
+        float: none;
+        text-align: center;
+    }
+    .they-say .person-say p{
+        float: none;
+        width: 100%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .they-say .person-say:not(:first-of-type) .avater{
+        float: none;
+        margin: auto;
+    }
+    .they-say .person-say:not(:first-of-type) h3{
+        float: none;
+        text-align: center;
+    }
+    .they-say .person-say:not(:first-of-type) p{
+        float: none;
+        width: 100%;
+    }
+}
+@media (min-width:768px) {
+    .they-say .person-say:first-of-type{
+        width: 100%;
+        
+    }
+    .they-say .person-say:not(:first-of-type){
+        width: 49%;
+    }
+    .they-say .person-say:last-of-type{
+        margin-left: 2%;
+    }
+}
+@media (min-width:992px) {
+    .they-say .person-say:first-of-type{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .they-say .person-say p{
+        width: calc(100% - 110px);
+    }
+    .they-say .person-say .avater{
+        margin-right: 10px;
+    }
+}
+.they-say .person-say .avater{
+    width: 100px;
+    
+}
+.they-say .person-say h3 {
+    margin: 10px 0;
+    font-size: 21px;
+}
+.they-say .person-say p{
+    font-size: 18px;
+    color: #111;
+    
+}
+/* end what they say */
+/* *************************************** */
+
+/* start information product */
+.information{
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+.information .h1{
+    font-size: 40px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.information .info-list li{
+    display: inline-block;
+    padding: 10px;
+    background-color: #ddd;
+    font-size: 22px;
+    cursor: pointer;
+}
+.information .info-list li.active{
+    background-color: #FFF;
+    color:rgb(43, 169, 253)
+}
+.information .info-content>div{
+    background-color: #fff;
+    padding: 15px;
+    line-height: 2;
+}
+.information .info-content>div:not(:first-of-type){
+    display: none;
+}
+@media (max-width:767px){
+    .information .info-list li{
+        display: block;
+    }
+}
+/* end information product */
+/* *************************************** */
+
+/* start footer */
+.footer{
+    background-color: #111;
+    color: #FFF;
+    padding: 10px 0;
+
+}
+@media (max-width:767px){
+    .mobile,
+    .copy_right{
+        width: 100%;
+    }
+}
+@media (min-width:768px) {
+    .mobile,
+    .copy_right{
+        width: 50%;
+    }
+}
+/* end footer */
+@media (max-width:767px){  /*mobile & tablet */
+    .visible-xs{
+        display: block !important;
+    }
+    .hidden-xs{
+        display: none !important;
+    }
+    .responsive-paragraph{
+        text-align: center;
+        font-size: 18px !important;
+    }
+}
+@media (min-width:768px) and (max-width:991px){ /* small screen*/
+    .container{
+        width: 750px;
+    }
+    .visible-sm{
+        display: block !important;
+    }
+    .hidden-sm{
+        display: none !important;
+    }
+    .responsive-paragraph{
+        font-size: 19px !important;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){ /*medum screen*/
+    .container{
+        width: 970px;
+    }
+    .visible-md{
+        display: block !important;
+    }
+    .hidden-md{
+        display: none !important;
+    }
+    .responsive-paragraph{
+        font-size: 20px !important;
+    }
+}
+
+@media (min-width:1200px){ /*large screen*/
+    .container{
+        width: 1170px;
+    }
+    .visible-lg{
+        display: block !important;
+    }
+    .hidden-lg{
+        display: none !important;
+    }
+}
+
+/* start my framework */
+.text-center{
+    text-align: center;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg{
+    display: none;
+}
+.clearfix{
+    clear: both;
+}
+
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+
+.h1{
+    font-size: 2em;
+}
+
+.responsive-paragraph {
+    line-height: 1.8;
+    font-size: 22px;
+}
+.responsive-img{
+    width: 100%;
+    
+}
+.unlist{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.img-circal{
+    border-radius: 50%;
+}
+.img-thumail{
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+}
+/* end my framework */
